@@ -16,7 +16,7 @@ init_stock_lookup = function() {
 
   $('#stock-lookup-form').on('ajax:error', function(event, xhr, status, error){
     hide_spinner();
-    $('#stock-lookup-resluts').replaceWith(' ');
+    $('#stock-lookup-results').replaceWith(' ');
     $('#stock-lookup-errors').replaceWith('Stock Was Not Found.');
   });
 }
